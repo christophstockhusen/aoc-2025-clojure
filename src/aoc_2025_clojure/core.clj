@@ -11,4 +11,4 @@
   (println "Day 02 - Part 1:" (day-02/part-1))
   (println "Day 02 - Part 2:" (day-02/part-2))
   (println "Day 03 - Part 1:" (day-03/part-1))
-  (println "Day 04 - Part 2:" (day-03/part-2)))
+  (println "Day 03 - Part 2:" (day-03/part-2)))
