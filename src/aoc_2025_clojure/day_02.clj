@@ -10,15 +10,14 @@
 (defn solve
   ([part] (solve part (slurp (io/resource "02.txt"))))
   ([part input]
-   (->> input
-        (re-seq #"(\d+)-(\d+)")
-        (map rest)
-        (map #(map parse-long %))
-        (mapcat (fn [[a b]] (range a (inc b))))
-        (map str)
-        (filter (partial invalid? part))
-        (map parse-long)
-        (reduce +))))
+   (let [xf (comp
+             (map rest)
+             (map #(map parse-long %))
+             (mapcat (fn [[a b]] (range a (inc b))))
+             (map str)
+             (filter (partial invalid? part))
+             (map parse-long))]
+     (transduce xf + 0 (re-seq #"(\d+)-(\d+)" input)))))
 
 (defn part-1
   ([] (solve :part-1))
