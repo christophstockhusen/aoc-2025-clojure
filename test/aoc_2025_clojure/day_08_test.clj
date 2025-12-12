@@ -1,5 +1,6 @@
 (ns aoc-2025-clojure.day-08-test 
   (:require
+   [aoc-2025-clojure.day-08 :refer [part-1 part-2]]
    [clojure.test :refer [deftest is testing]]))
 
 (def input "162,817,812
@@ -27,4 +28,4 @@
   (testing "Day 08 - Part 1"
     (is (= 40 (part-1 input))))
   (testing "Day 08 - Part 2"
-    (is (= true (part-1 input)))))
+    (is (= 25272 (part-2 input)))))
