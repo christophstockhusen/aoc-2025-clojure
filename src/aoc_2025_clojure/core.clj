@@ -7,7 +7,8 @@
    [aoc-2025-clojure.day-04 :as day-04]
    [aoc-2025-clojure.day-05 :as day-05]
    [aoc-2025-clojure.day-06 :as day-06]
-   [aoc-2025-clojure.day-07 :as day-07]))
+   [aoc-2025-clojure.day-07 :as day-07]
+   [aoc-2025-clojure.day-11 :as day-11]))
 
 (defn -main []
   (println "Day 01 - Part 1:" (day-01/part-1))
@@ -23,4 +24,6 @@
   (println "Day 06 - Part 1:" (day-06/part-1))
   (println "Day 06 - Part 2:" (day-06/part-2))
   (println "Day 07 - Part 1:" (day-07/part-1))
-  (println "Day 07 - Part 2:" (day-07/part-2)))
+  (println "Day 07 - Part 2:" (day-07/part-2))
+  (println "Day 11 - Part 1:" (day-11/part-1))
+  (println "Day 11 - Part 2:" (day-11/part-2)))
